@@ -401,7 +401,7 @@ release_reservation() {
         return 0
     fi
 
-    echo /usr/local/bin/machine-release          # local, auto-hostname, always succeeds
+    /usr/local/bin/machine-release --service         # local, auto-hostname, always succeeds
     notify_sysadmin \
         "[$host] reservation RELEASED after idle timeout" \
         "was reserved_by=$user; escalation reached CONFIRM"
