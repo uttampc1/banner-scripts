@@ -356,11 +356,11 @@ json_val() {
 
 build_payload() {
     if [[ "$NEW_STATUS" == "reserved" ]]; then
-        printf '{ "status": %s, "reserved_by": %s }' \
+        printf '{ "status": %s, "reserved_by": %s, "motd": null }' \
             "$(json_val "$NEW_STATUS")" \
             "$(json_val "$NEW_RESERVED_BY")"
     else
-        printf '{ "status": %s, "reserved_by": null }' \
+        printf '{ "status": %s, "reserved_by": null, "motd": null }' \
             "$(json_val "$NEW_STATUS")"
     fi
 }

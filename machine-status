@@ -208,7 +208,7 @@ make_reservation() {
 
   # Update the global database
   machine_name=`hostname`
-  if update_machine_status -m ${machine_name} -s reserved -r ${username} --quiet; then
+  if /usr/local/bin/update_machine_status -m ${machine_name} -s reserved -r ${username} --quiet; then
     echo "$DATE: Database updated with the reservation."
     echo "INFO: Verify database entry using show_machine or list_machines commands"
   else
@@ -312,7 +312,7 @@ release_reservation() {
 
   # Update the global database
   machine_name=`hostname`
-  if update_machine_status -m ${machine_name} -s "available" --quiet; then
+  if /usr/local/bin/update_machine_status -m ${machine_name} -s "available" --quiet; then
     echo "$DATE: Database updated"
     echo "INFO: Verify database entry using show_machine or list_machines commands"
   else
