@@ -49,7 +49,7 @@ Disclaimer:
         DO NOT ASSUME THAT IT WILL PREVENT ACTUAL USE OF THE MACHINE.
 
 Repository:
-        https://github.com/uttampc1/machine-status-scripts.git
+        https://github.com/uttampc1/banner-scripts.git
 ======================================================================
 ```
 
@@ -89,7 +89,7 @@ Disclaimer:
 
 
 Repository:
-        https://github.com/uttampc1/machine-status-scripts.git
+        https://github.com/uttampc1/banner-scripts.git
 ======================================================================
 
 ```
