@@ -1,6 +1,6 @@
 0) cd /tmp
 1) git clone https://github.com/uttampc1/banner-scripts.git
-2) cd machine-status-script
+2) cd banner-script
 3) Execute install.sh script (once). This will install machine-status script in /usr/local/bin directory.
 4) Make sure /usr/local/bin is in your $PATH
 5) It support following commands,
